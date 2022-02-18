@@ -6,14 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      
-        <p>
-          Teste de alteração de página parte 3
-        </p>
-        <h3>California Love</h3>
-	      <p>Super Bowl</p>
-        <p>Super Bowl</p>
-        <p>Super Bowl</p>
+        <h2>Docker, GitHub Actions e React</h2>
+        <h3>Primeiro Deploy Continuo</h3>
       </header>
     </div>
   );

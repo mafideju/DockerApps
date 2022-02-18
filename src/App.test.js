@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders california love', () => {
+test('renders Docker, GitHub Actions e React', () => {
   render(<App />);
-  const linkElement = screen.getByText(/california love/i);
+  const linkElement = screen.getByText(/Docker, GitHub Actions e React/i);
   expect(linkElement).toBeInTheDocument();
 });
 
