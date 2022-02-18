@@ -32,7 +32,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
         application_name: docker-react-101
         environment_name: Dockerreact101-env
-        existing_bucket_name: eba-gmuhwxs9.us-east-1.elasticbeanstalk.com
         region: us-east-1
         version_label: 001
         deployment_package: deploy.zip
