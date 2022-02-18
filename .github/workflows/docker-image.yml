@@ -32,6 +32,6 @@ jobs:
         existing_bucket_name: eba-gmuhwxs9.us-east-1.elasticbeanstalk.com.
         region: us-east-1
 
-        version_label: ${{ github.sha }}
-        deployment_package: public
+        version_label: 001
+        deployment_package: deploy.zip
 
