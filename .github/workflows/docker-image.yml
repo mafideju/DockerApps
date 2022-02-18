@@ -34,6 +34,6 @@ jobs:
         application_name: docker-react-101
         environment_name: Dockerreact101-env
         region: us-east-1
-        version_label: 001
+        version_label: 002
         deployment_package: deploy.zip
 
