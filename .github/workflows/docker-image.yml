@@ -14,14 +14,14 @@ jobs:
     - uses: actions/checkout@v2
 
     - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-    - run: docker build -t cygnetops/react-test -f Dockerfile.dev .
-    - run: docker run -e CI=true cygnetops/react-test npm test
+    - run: docker build -t mafideju/docker-react-101 -f Dockerfile.dev .
+    - run: docker run -e CI=true mafideju/docker-react-101 npm test
 
     - name: Criando Imagem Docker
       run: docker build . --file Dockerfile --tag docker-react-101:$(date +%s)
       
     - name: Implementação no Elastic Bean Stalk
-        uses: einaregilsson/beanstalk-deploy@v18
+        uses: mafideju/docker-react-101
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
