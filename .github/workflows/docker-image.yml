@@ -20,8 +20,9 @@ jobs:
     - name: Criando Imagem Docker
       run: docker build . --file Dockerfile --tag docker-react-101:$(date +%s)
       
-    - name: Implementação no Elastic Bean Stalk
-        uses: mafideju/docker-react-101
+
+    - name: Deploy to EB
+      uses: einaregilsson/beanstalk-deploy@v20
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
