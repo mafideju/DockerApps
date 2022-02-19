@@ -8,6 +8,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo" />
         <h2>Docker, GitHub Actions e React</h2>
         <h3>Primeiro Deploy Continuo</h3>
+        <p>Adição da Branch --Develop</p>
       </header>
     </div>
   );
